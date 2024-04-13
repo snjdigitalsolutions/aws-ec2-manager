@@ -16,7 +16,7 @@ class StateDecisionTest extends AbstractTest {
     {
         // Arrange
         HostConfiguration testConfiguration = new HostConfiguration();
-        testConfiguration.setInstanceid("test");
+        testConfiguration.setInstanceId("test");
         testConfiguration.setStartTime("0600");
         testConfiguration.setEndTime("1800");
 
@@ -32,7 +32,7 @@ class StateDecisionTest extends AbstractTest {
     {
         // Arrange
         HostConfiguration testConfiguration = new HostConfiguration();
-        testConfiguration.setInstanceid("test");
+        testConfiguration.setInstanceId("test");
         testConfiguration.setStartTime("0600");
         testConfiguration.setEndTime("1800");
 
@@ -48,7 +48,7 @@ class StateDecisionTest extends AbstractTest {
     {
         // Arrange
         HostConfiguration testConfiguration = new HostConfiguration();
-        testConfiguration.setInstanceid("test");
+        testConfiguration.setInstanceId("test");
         testConfiguration.setStartTime("0600");
         testConfiguration.setEndTime("1800");
 

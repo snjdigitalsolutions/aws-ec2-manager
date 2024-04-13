@@ -5,7 +5,6 @@ import org.springframework.stereotype.Component;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
-import java.nio.Buffer;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -21,13 +20,14 @@ public class HostConfigurationParser {
             while(inLine != null)
             {
                 inLine = inLine.trim();
-                if (!inLine.startsWith("#") && !inLine.isEmpty())
+                if (isLineValid(inLine))
                 {
                     HostConfiguration hostConfiguration = new HostConfiguration();
                     String[] tokens = inLine.split("\\|");
-                    hostConfiguration.setInstanceid(tokens[0].trim());
+                    hostConfiguration.setInstanceId(tokens[0].trim());
                     hostConfiguration.setStartTime(tokens[1].trim());
                     hostConfiguration.setEndTime(tokens[2].trim());
+                    hostConfiguration.setRegion(tokens[3].trim());
                     configurationList.add(hostConfiguration);
                 }
                 inLine = reader.readLine();
@@ -37,6 +37,19 @@ public class HostConfigurationParser {
             System.out.println(ex.getMessage());
         }
         return  configurationList;
+    }
+
+    private Boolean isLineValid(String line)
+    {
+        boolean valid = false;
+        if(!line.startsWith("#")
+                && !line.isEmpty()
+                && line.matches("[a-zA-B0-9-]+ \\| [a-zA-B0-9-]+ \\| [a-zA-B0-9-]+ \\| [a-zA-B0-9-]+")
+        )
+        {
+            valid = true;
+        }
+        return valid;
     }
 
 }
