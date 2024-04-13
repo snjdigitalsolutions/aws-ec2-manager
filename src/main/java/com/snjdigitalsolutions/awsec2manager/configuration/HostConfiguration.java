@@ -10,7 +10,7 @@ import lombok.Setter;
 public class HostConfiguration {
 
     private String instanceid;
-    private Integer startTime;
-    private Integer endTime;
+    private String startTime;
+    private String endTime;
 
 }

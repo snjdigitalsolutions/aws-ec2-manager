@@ -26,8 +26,8 @@ public class HostConfigurationParser {
                     HostConfiguration hostConfiguration = new HostConfiguration();
                     String[] tokens = inLine.split("\\|");
                     hostConfiguration.setInstanceid(tokens[0].trim());
-                    hostConfiguration.setStartTime(Integer.valueOf(tokens[1].trim()));
-                    hostConfiguration.setEndTime(Integer.valueOf(tokens[2].trim()));
+                    hostConfiguration.setStartTime(tokens[1].trim());
+                    hostConfiguration.setEndTime(tokens[2].trim());
                     configurationList.add(hostConfiguration);
                 }
                 inLine = reader.readLine();
