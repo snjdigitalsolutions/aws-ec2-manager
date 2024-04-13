@@ -1,8 +1,11 @@
 package com.snjdigitalsolutions.awsec2manager.ec2;
 
+import org.springframework.stereotype.Component;
+
 import java.util.HashMap;
 import java.util.Map;
 
+@Component
 public class IPtoIDMapper {
 
     private Map<String,String> ipToIdMap;

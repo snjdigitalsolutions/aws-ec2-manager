@@ -1,12 +1,11 @@
 package com.snjdigitalsolutions.awsec2manager.decision;
 
-import com.snjdigitalsolutions.awsec2manager.configuration.HostConfiguration;
+import com.snjdigitalsolutions.awsec2manager.hostconfig.HostConfiguration;
 import org.springframework.stereotype.Component;
 
 import java.time.LocalTime;
 import java.time.ZoneId;
 import java.time.format.DateTimeFormatter;
-import java.util.Optional;
 
 @Component
 public class StateDecision {

@@ -1,4 +1,4 @@
-package com.snjdigitalsolutions.awsec2manager.configuration;
+package com.snjdigitalsolutions.awsec2manager.hostconfig;
 
 import org.springframework.stereotype.Component;
 
@@ -44,7 +44,7 @@ public class HostConfigurationParser {
         boolean valid = false;
         if(!line.startsWith("#")
                 && !line.isEmpty()
-                && line.matches("[a-zA-B0-9-]+ \\| [a-zA-B0-9-]+ \\| [a-zA-B0-9-]+ \\| [a-zA-B0-9-]+")
+                && line.matches("[a-zA-B0-9-\\.]+ \\| [a-zA-B0-9-]+ \\| [a-zA-B0-9-]+ \\| [a-zA-B0-9-]+")
         )
         {
             valid = true;

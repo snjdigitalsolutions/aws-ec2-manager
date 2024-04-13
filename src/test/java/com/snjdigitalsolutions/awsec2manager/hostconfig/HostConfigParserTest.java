@@ -1,4 +1,4 @@
-package com.snjdigitalsolutions.awsec2manager.configuration;
+package com.snjdigitalsolutions.awsec2manager.hostconfig;
 
 import com.snjdigitalsolutions.awsec2manager.AbstractTest;
 import org.junit.jupiter.api.Test;

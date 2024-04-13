@@ -1,7 +1,7 @@
 package com.snjdigitalsolutions.awsec2manager.decision;
 
 import com.snjdigitalsolutions.awsec2manager.AbstractTest;
-import com.snjdigitalsolutions.awsec2manager.configuration.HostConfiguration;
+import com.snjdigitalsolutions.awsec2manager.hostconfig.HostConfiguration;
 import org.junit.jupiter.api.Test;
 
 import java.time.LocalTime;

@@ -1,6 +1,6 @@
 package com.snjdigitalsolutions.awsec2manager;
 
-import com.snjdigitalsolutions.awsec2manager.configuration.HostConfigurationParser;
+import com.snjdigitalsolutions.awsec2manager.hostconfig.HostConfigurationParser;
 import com.snjdigitalsolutions.awsec2manager.decision.StateDecision;
 import com.snjdigitalsolutions.awsec2manager.ec2.EC2List;
 import com.snjdigitalsolutions.awsec2manager.ec2.EC2StartStop;
