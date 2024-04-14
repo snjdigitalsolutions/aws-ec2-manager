@@ -6,7 +6,7 @@ public class AbstractEC2 {
 
     protected Region selectedRegion = Region.US_EAST_1;
 
-    protected Region setRegionForTask(String regionFromConfiguration)
+    protected void setRegionForTask(String regionFromConfiguration)
     {
         switch (regionFromConfiguration)
         {
@@ -26,7 +26,6 @@ public class AbstractEC2 {
                 selectedRegion = Region.US_GOV_WEST_1;
                 break;
         }
-        return selectedRegion;
     }
 
 }

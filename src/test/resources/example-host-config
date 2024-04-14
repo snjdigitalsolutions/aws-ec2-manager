@@ -2,7 +2,7 @@
 # ---- Comment configuration lines you wish to be ignored
 # ---- Valid regions: us-east-1, us-east-1, us-west-1, us-west-2, us-gov-east, and us-gov-west
 
-# Instance ID | Start time | Stop time | Region
-i-09af3c430ff05e04b | 0600 | 1800 | us-east-2
+# Instance IP | Start time | Stop time | Region
+192.168.100.45 | 0600 | 1800 | us-east-2
 # The line below is ignored because not all values are present
-i-09af3c430ff05e04b | 0600 |
+192.168.100.45 | 0600 |

@@ -2,8 +2,11 @@ package com.snjdigitalsolutions.awsec2manager.scheduledtask;
 
 import com.snjdigitalsolutions.awsec2manager.decision.State;
 import com.snjdigitalsolutions.awsec2manager.ec2.EC2StartStop;
-import org.springframework.scheduling.support.CronTrigger;
+import org.springframework.context.annotation.Scope;
+import org.springframework.stereotype.Component;
 
+@Component
+@Scope("prototype")
 public class EC2StateChangeTask implements ScheduledStateChangeTask {
 
     private final EC2StartStop ec2StartStop;
@@ -20,12 +23,11 @@ public class EC2StateChangeTask implements ScheduledStateChangeTask {
     public void run()
     {
         Boolean success = ec2StartStop.setInstanceState(instanceId, desiredState, awsRegion);
-    }
-
-    @Override
-    public CronTrigger getCronTrigger(String hour, String minute)
-    {
-        return new CronTrigger("0 " + minute + " " + hour + " * * *");
+        if (!success)
+        {
+            //TODO Add some logging here
+            System.out.println("Failed to set instance state");
+        }
     }
 
     @Override

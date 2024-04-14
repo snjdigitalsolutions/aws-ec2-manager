@@ -4,9 +4,7 @@ import com.snjdigitalsolutions.awsec2manager.AbstractTest;
 import com.snjdigitalsolutions.awsec2manager.decision.State;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
-
-class EC2StartStopTest extends AbstractTest {
+class ProdEC2StartStopTest extends AbstractTest {
 
 
     @Test
@@ -18,7 +16,7 @@ class EC2StartStopTest extends AbstractTest {
         String region = "us-east-1";
 
         // Act
-        ec2StartStop.setInstanceState(ec2InstanceId, desriedState, region);
+        prodEc2StartStop.setInstanceState(ec2InstanceId, desriedState, region);
 
         // Assert
     }
@@ -32,7 +30,7 @@ class EC2StartStopTest extends AbstractTest {
         String region = "us-east-1";
 
         // Act
-        ec2StartStop.setInstanceState(ec2InstanceId, desriedState, region);
+        prodEc2StartStop.setInstanceState(ec2InstanceId, desriedState, region);
 
         // Assert
     }

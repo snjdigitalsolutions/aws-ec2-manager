@@ -9,9 +9,9 @@ import lombok.Setter;
 @Setter
 public class HostConfiguration {
 
-    private String instanceId;
+    private String instanceIP;
     private String startTime;
-    private String endTime;
+    private String stopTime;
     private String region;
 
 }

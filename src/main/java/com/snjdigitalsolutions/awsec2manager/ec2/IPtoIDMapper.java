@@ -25,4 +25,9 @@ public class IPtoIDMapper {
         return ipToIdMap.get(ip);
     }
 
+    public void clearMap()
+    {
+        ipToIdMap.clear();
+    }
+
 }

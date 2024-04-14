@@ -16,9 +16,9 @@ class StateDecisionTest extends AbstractTest {
     {
         // Arrange
         HostConfiguration testConfiguration = new HostConfiguration();
-        testConfiguration.setInstanceId("test");
+        testConfiguration.setInstanceIP("test");
         testConfiguration.setStartTime("0600");
-        testConfiguration.setEndTime("1800");
+        testConfiguration.setStopTime("1800");
 
         // Act
         State decisionState = stateDecision.makeDecisionForHostConfiguration(testConfiguration, LocalTime.parse("0916", DateTimeFormatter.ofPattern("kkmm")));
@@ -32,9 +32,9 @@ class StateDecisionTest extends AbstractTest {
     {
         // Arrange
         HostConfiguration testConfiguration = new HostConfiguration();
-        testConfiguration.setInstanceId("test");
+        testConfiguration.setInstanceIP("test");
         testConfiguration.setStartTime("0600");
-        testConfiguration.setEndTime("1800");
+        testConfiguration.setStopTime("1800");
 
         // Act
         State decisionState = stateDecision.makeDecisionForHostConfiguration(testConfiguration, LocalTime.parse("0500", DateTimeFormatter.ofPattern("kkmm")));
@@ -48,9 +48,9 @@ class StateDecisionTest extends AbstractTest {
     {
         // Arrange
         HostConfiguration testConfiguration = new HostConfiguration();
-        testConfiguration.setInstanceId("test");
+        testConfiguration.setInstanceIP("test");
         testConfiguration.setStartTime("0600");
-        testConfiguration.setEndTime("1800");
+        testConfiguration.setStopTime("1800");
 
         // Act
         State decisionState = stateDecision.makeDecisionForHostConfiguration(testConfiguration, LocalTime.parse("1900", DateTimeFormatter.ofPattern("kkmm")));

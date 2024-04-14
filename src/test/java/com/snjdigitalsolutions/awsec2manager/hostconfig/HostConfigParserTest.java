@@ -22,9 +22,9 @@ class HostConfigParserTest extends AbstractTest {
 
         // Assert
         assertEquals(1, configurations.size());
-        assertEquals("i-09af3c430ff05e04b", configurations.get(0).getInstanceId());
+        assertEquals("i-09af3c430ff05e04b", configurations.get(0).getInstanceIP());
         assertEquals("0600", configurations.get(0).getStartTime());
-        assertEquals("1800", configurations.get(0).getEndTime());
+        assertEquals("1800", configurations.get(0).getStopTime());
         assertEquals("us-east-2", configurations.get(0).getRegion());
 
     }

@@ -19,7 +19,7 @@ public class StateDecision {
             nowInUTC = currentTime[0];
         }
         LocalTime startTime = LocalTime.parse(hostConfiguration.getStartTime(), formatter);
-        LocalTime endTime = LocalTime.parse(hostConfiguration.getEndTime(), formatter);
+        LocalTime endTime = LocalTime.parse(hostConfiguration.getStopTime(), formatter);
         State state = State.STOP;
         if (nowInUTC.isAfter(startTime) && nowInUTC.isBefore(endTime))
         {

@@ -24,9 +24,9 @@ public class HostConfigurationParser {
                 {
                     HostConfiguration hostConfiguration = new HostConfiguration();
                     String[] tokens = inLine.split("\\|");
-                    hostConfiguration.setInstanceId(tokens[0].trim());
+                    hostConfiguration.setInstanceIP(tokens[0].trim());
                     hostConfiguration.setStartTime(tokens[1].trim());
-                    hostConfiguration.setEndTime(tokens[2].trim());
+                    hostConfiguration.setStopTime(tokens[2].trim());
                     hostConfiguration.setRegion(tokens[3].trim());
                     configurationList.add(hostConfiguration);
                 }
