@@ -1,7 +1,7 @@
 # AWS EC2 Manager
-The EC2 manager is a Java based program made to start and stop EC2 instances running
-on AWS. This program is intended to help reduce the cost of EC2 infrastructure which
-may be used for development purposes and is not needed 24 hours a day.
+The EC2 manager is a Java based program for starting and stopping EC2 instances running
+on AWS. This program is intended to reduce the cost of EC2 infrastructure which
+may is not needed 24 hours a day.
 
 Place the application configuration in /etc/ec2manager/ec2manager.conf
 
